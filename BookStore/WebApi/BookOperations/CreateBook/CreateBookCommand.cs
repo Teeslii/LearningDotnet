@@ -1,6 +1,6 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
- 
+ using AutoMapper;
 using WebApi.DBOperations;
 
 namespace WebApi.BookOperations.CreatBook
@@ -9,9 +9,11 @@ namespace WebApi.BookOperations.CreatBook
     {
        public CreateBookModel BookModel {  get; set; }
        private readonly BookStoreDbContext  _dbContext;
-       public CreateBookCommand(BookStoreDbContext dbContext)
+       private readonly IMapper _mapper;
+       public CreateBookCommand(BookStoreDbContext dbContext, IMapper mapper)
        {
            _dbContext = dbContext;
+           _mapper = mapper;
        }
 
        public void Handle()
@@ -20,11 +22,8 @@ namespace WebApi.BookOperations.CreatBook
             if(book is not null)
                    throw new InvalidOperationException("This book is already available.");
             
-            book = new Book();
-            book.Title = BookModel.Title;
-            book.PublishDate = BookModel.PublishDate;
-            book.PageCount = BookModel.PageCount;
-            book.GenreId = BookModel.GenreId;
+            book = _mapper.Map<Book>(BookModel);
+         
 
             _dbContext.Books.Add(book);
             _dbContext.SaveChanges();
