@@ -14,6 +14,7 @@ using Microsoft.OpenApi.Models;
 using WebApi.DBOperations;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
+using WebApi.Middleware;
 
 namespace WebApi
 {
@@ -55,6 +56,8 @@ namespace WebApi
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCustomExceptionMiddle(); //endpoint'ler çalışmadan önce
 
             app.UseEndpoints(endpoints =>
             {
