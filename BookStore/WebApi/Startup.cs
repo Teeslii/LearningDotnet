@@ -15,6 +15,7 @@ using WebApi.DBOperations;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using WebApi.Middleware;
+using WebApi.Services;
 
 namespace WebApi
 {
@@ -39,6 +40,9 @@ namespace WebApi
 
             services.AddDbContext<BookStoreDbContext>(options => options.UseInMemoryDatabase(databaseName: "BookStoreDB"));
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddSingleton<ILoggerService, ConsolLogger>();
+ // tek hamleyle gelmek istediği yeri değiştirebilirim
+     //     services.AddSingleton<ILoggerService, DBLogger>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
