@@ -22,7 +22,6 @@ namespace  WebApi.Application.GenreOperations.Queries.GetGenreDetail
                     throw new InvalidOperationException("Book type not found!");
               
             return _mapper.Map<GenreDetailViewModel>(genre);
-           
         }
     }      
     public class GenreDetailViewModel

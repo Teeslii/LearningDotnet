@@ -1,6 +1,6 @@
 using WebApi.DBOperations;
 using AutoMapper;
-using WebApi.Entities;
+
 
 namespace  WebApi.Application.GenreOperations.Queries.GetGenres
 {

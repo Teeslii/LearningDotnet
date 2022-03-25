@@ -20,7 +20,7 @@ namespace  WebApi.Application.BookOperations.Queries.GetBookDetail
 
         public BookDetailViewModel Handle()
         {   
-            var book = _dbContext.Books.Include(x => x.Genre).Where(book => book.Id == BookId).SingleOrDefault();
+            var book = _dbContext.Books.Include(x => x.Genre).Include(x => x.Author).Where(book => book.Id == BookId).SingleOrDefault();
 
             if(book is null)
                throw new InvalidOperationException("The book was not found.");

@@ -1,0 +1,32 @@
+using Microsoft.EntityFrameworkCore;
+using WebApi.DBOperations;
+using WebApi.Entities;
+
+namespace  WebApi.Application.AuthorOperations.Commands.DeleteAuthor
+{
+     public class DeleteAuthorCommand 
+     {
+         private readonly BookStoreDbContext  _dbContext;
+        
+        public int AuthorId { get; set; }
+         public DeleteAuthorCommand(BookStoreDbContext dbContext)
+         {
+               _dbContext = dbContext;
+         }
+
+                
+         public void Handle()
+         {
+             var author = _dbContext.Authors.SingleOrDefault(x => x.Id == AuthorId);
+
+             if(author is null)
+                throw new InvalidOperationException("Author not found!");
+
+            if(_dbContext.Books.Include(x => x.Author).Any(command => command.Author.Id == AuthorId))
+                     throw new InvalidOperationException("Silinemez.");
+
+             _dbContext.Authors.Remove(author);
+             _dbContext.SaveChanges(); 
+         }
+    }
+}          
