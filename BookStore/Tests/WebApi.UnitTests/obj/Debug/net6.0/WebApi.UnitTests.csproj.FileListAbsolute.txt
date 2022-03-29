@@ -122,3 +122,10 @@ C:\Users\tesli\Desktop\TASK\.netCoreWebApi\Practices\BookStore\Tests\WebApi.Unit
 C:\Users\tesli\Desktop\TASK\.netCoreWebApi\Practices\BookStore\Tests\WebApi.UnitTests\obj\Debug\net6.0\ref\WebApi.UnitTests.dll
 C:\Users\tesli\Desktop\TASK\.netCoreWebApi\Practices\BookStore\Tests\WebApi.UnitTests\obj\Debug\net6.0\WebApi.UnitTests.pdb
 C:\Users\tesli\Desktop\TASK\.netCoreWebApi\Practices\BookStore\Tests\WebApi.UnitTests\obj\Debug\net6.0\WebApi.UnitTests.genruntimeconfig.cache
+C:\Users\tesli\Desktop\TASK\.netCoreWebApi\Practices\BookStore\Tests\WebApi.UnitTests\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\tesli\Desktop\TASK\.netCoreWebApi\Practices\BookStore\Tests\WebApi.UnitTests\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\tesli\Desktop\TASK\.netCoreWebApi\Practices\BookStore\Tests\WebApi.UnitTests\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\tesli\Desktop\TASK\.netCoreWebApi\Practices\BookStore\Tests\WebApi.UnitTests\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\tesli\Desktop\TASK\.netCoreWebApi\Practices\BookStore\Tests\WebApi.UnitTests\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\tesli\Desktop\TASK\.netCoreWebApi\Practices\BookStore\Tests\WebApi.UnitTests\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\tesli\Desktop\TASK\.netCoreWebApi\Practices\BookStore\Tests\WebApi.UnitTests\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
