@@ -4,7 +4,7 @@ using WebApi.DBOperations;
 using AutoMapper;
 using WebApi.Entities;
 using System;
-using WebApi.Application.BookOperations.Commands.CreatBook;
+using WebApi.Application.BookOperations.Commands.CreatGenre;
 using FluentAssertions;
 using System.Linq;
 

@@ -1,6 +1,6 @@
 using System;
 using TestSetup;
-using WebApi.Application.BookOperations.Commands.CreatBook;
+using WebApi.Application.BookOperations.Commands.CreatGenre;
 using Xunit;
 using FluentAssertions;
 

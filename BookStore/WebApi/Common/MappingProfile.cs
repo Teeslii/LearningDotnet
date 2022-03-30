@@ -2,7 +2,7 @@ using AutoMapper;
 using WebApi.Application.AuthorOperations.Commands.CreatAuthor;
 using WebApi.Application.AuthorOperations.Queries.GetAuthorDetail;
 using WebApi.Application.AuthorOperations.Queries.GetAuthors;
-using WebApi.Application.BookOperations.Commands.CreatBook;
+using WebApi.Application.BookOperations.Commands.CreatGenre;
 using WebApi.Application.BookOperations.Queries.GetBookDetail;
 using WebApi.Application.BookOperations.Queries.GetBooks;
 using WebApi.Application.GenreOperations.Queries.GetGenreDetail;

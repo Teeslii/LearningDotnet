@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
  
 using WebApi.DBOperations;
 
-namespace WebApi.Application.BookOperations.Commands.DeleteBook
+namespace WebApi.Application.BookOperations.Commands.DeleteGenre
 {
     public class DeleteBookCommand 
     {

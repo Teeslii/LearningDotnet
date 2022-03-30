@@ -23,7 +23,7 @@ namespace  WebApi.Application.AuthorOperations.Commands.DeleteAuthor
                 throw new InvalidOperationException("Author not found!");
 
             if(_dbContext.Books.Include(x => x.Author).Any(command => command.Author.Id == AuthorId))
-                     throw new InvalidOperationException("Silinemez.");
+                     throw new InvalidOperationException("The author cannot be deleted without deleting the book.");
 
              _dbContext.Authors.Remove(author);
              _dbContext.SaveChanges(); 

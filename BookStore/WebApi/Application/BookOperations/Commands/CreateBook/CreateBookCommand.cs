@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using WebApi.DBOperations;
 using WebApi.Entities;
 
-namespace WebApi.Application.BookOperations.Commands.CreatBook
+namespace WebApi.Application.BookOperations.Commands.CreatGenre
 {
     public class CreateBookCommand 
     {

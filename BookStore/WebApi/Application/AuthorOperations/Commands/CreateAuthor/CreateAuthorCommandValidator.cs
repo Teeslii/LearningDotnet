@@ -8,7 +8,7 @@ namespace WebApi.Application.AuthorOperations.Commands.CreatAuthor
         {
             RuleFor(command => command.Model.Name).NotEmpty().MinimumLength(2);
             RuleFor(command => command.Model.Surname).NotEmpty().MinimumLength(2);
-              RuleFor(command => command.Model.DateOfBirth).NotEmpty().LessThan(DateTime.Now.Date);
+            RuleFor(command => command.Model.DateOfBirth).NotEmpty().LessThan(DateTime.Now.Date);
         }
     }
 }

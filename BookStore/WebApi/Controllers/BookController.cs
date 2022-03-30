@@ -5,9 +5,9 @@ using FluentValidation.Results;
 using FluentValidation;
 using WebApi.Application.BookOperations.Queries.GetBooks;
 using WebApi.Application.BookOperations.Queries.GetBookDetail;
-using WebApi.Application.BookOperations.Commands.CreatBook;
+using WebApi.Application.BookOperations.Commands.CreatGenre;
 using WebApi.Application.BookOperations.Commands.UpdateBook;
-using WebApi.Application.BookOperations.Commands.DeleteBook;
+using WebApi.Application.BookOperations.Commands.DeleteGenre;
 using Microsoft.AspNetCore.Authorization;
 
 namespace WebApi.Controllers;
